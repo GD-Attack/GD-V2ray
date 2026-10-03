@@ -10,3 +10,5 @@ See the [LICENSE](./LICENSE) file for details.
 通过网盘分享的文件：ansible-rhel9.iso
 链接: https://pan.baidu.com/s/1aOcfeuU6pegFaxNyRbmHNA?pwd=8888 提取码: 8888 
 --来自百度网盘超级会员v1的分享
+
+v2ray.tar.gz这个压缩文件中包含roles角色和执行角色的playbook剧本，下载之后解压，将这个playbook剧本与roles放到/etc/ansible，通过playbook剧本运行这个角色就好，最好ansible.cfg与我文档中的配置相同，不然可能会出现报错信息
