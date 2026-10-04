@@ -55,8 +55,8 @@ tar -zxvf v2ray.tar.gz
 
 # 进入解压后的目录并将文件复制/移动到 /etc/ansible
 cp -r roles/ /etc/ansible/
-cp site.yml /etc/ansible/   # 请根据实际的剧本文件名修改
-cp ansible.cfg /etc/ansible/
+cp v2ray.yml /etc/ansible/   # 请根据实际的剧本文件名修改
+cp ansible.cfg /etc/ansible/  # 直接复制我文档中的ansible.cfg配置文件也可以
 
 ```
 
