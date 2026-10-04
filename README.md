@@ -38,7 +38,7 @@ v2ray.tar.gz这个压缩文件中包含roles角色和执行角色的playbook剧�
 在下载或解压 `v2ray.tar.gz` 后，建议将相关文件放置于 `/etc/ansible` 目录下使用：
 
 * **`roles/v2ray/`**：核心 Ansible 角色目录，包含安装 Xray、配置生成、启动服务及开机自启脚本等任务。
-* **`site.yml`** *(或您的剧本文件名)*：调用 `v2ray` 角色的 Ansible Playbook 主剧本。
+* **`v2ray.yaml`** *(或您的剧本文件名)*：调用 `v2ray` 角色的 Ansible Playbook 主剧本。
 * **`ansible.cfg`**：Ansible 配置文件，建议使用项目提供的配置以防止运行出现逻辑或路径报错。
 
 ---
@@ -54,8 +54,8 @@ v2ray.tar.gz这个压缩文件中包含roles角色和执行角色的playbook剧�
 tar -zxvf v2ray.tar.gz
 
 # 进入解压后的目录并将文件复制/移动到 /etc/ansible
-cp -r roles/ /etc/ansible/
-cp v2ray.yml /etc/ansible/   # 请根据实际的剧本文件名修改
+cp -a roles/ /etc/ansible/
+cp v2ray.yaml /etc/ansible/   # 请根据实际的剧本文件名修改
 cp ansible.cfg /etc/ansible/  # 直接复制我文档中的ansible.cfg配置文件也可以
 
 ```
@@ -84,8 +84,8 @@ cp ansible.cfg /etc/ansible/  # 直接复制我文档中的ansible.cfg配置文�
 cd /etc/ansible
 
 # 执行 Ansible 剧本
-ansible-playbook v2ray.yml
-ansible-navigator run v2ray.yml -m stdout
+ansible-playbook v2ray.yaml 
+ansible-navigator run v2ray.yaml -m stdout
 ```
 
 ---
