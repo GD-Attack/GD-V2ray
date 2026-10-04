@@ -66,14 +66,13 @@ cp ansible.cfg /etc/ansible/  # 直接复制我文档中的ansible.cfg配置文�
 
 ### 2. 配置主机清单（hosts）
 
-编辑 `/etc/ansible/hosts` 文件，添加需要部署的目标服务器 IP 地址及 SSH 认证信息：
+编辑 `/etc/ansible/hosts` 文件，添加需要部署的目标服务器 IP 地址及 SSH 认证信息(或者是直接再主机清单中做解析，也可以，直接在主机清单中写上被控节点的IP地址)：
 
 ```ini
 [v2ray_servers]
 192.168.1.100 ansible_ssh_user=root ansible_ssh_pass=YourPassword
 
 ```
-或者是直接再主机清单中做解析，也可以，直接在主机清单中写上被控节点的IP地址
 ---
 
 ### 3. 执行 Playbook 部署
