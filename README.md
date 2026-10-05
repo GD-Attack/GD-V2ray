@@ -23,6 +23,20 @@ v2ray.tar.gz这个压缩文件中包含roles角色和执行角色的playbook剧�
 GD-V2ray-ansible 是一个基于 Ansible 自动化运维剧本（Roles）的项目，旨在帮助管理员在 Linux 服务器上一键、批量部署高性能的 Xray 代理节点（支持 VLESS-REALITY、VMess 等主流安全协议），并能自动生成对应的 Clash / Mihomo 订阅配置文件。
 
 ---
+🚀 项目概述：GD-V2ray-ansible
+GD-V2ray-ansible 是专为 Linux 管理员和高阶用户设计的 Ansible 自动化运维项目。它能够极大地降低代理节点的部署门槛，实现“代码即基础设施”的现代化运维体验。
+
+🛠️ 它能帮你做什么？
+一键式批量部署：摆脱繁琐的手动敲命令和重复配置，通过 Ansible 剧本同时向多台服务器推送节点。
+
+安全的协议支持：内置对 Xray 的深度支持，重点优化了高安全性的 VLESS-REALITY 协议，免备案、防探测。
+
+无缝订阅管理：部署完毕后自动生成节点订阅内容，告别手动拼接节点链接的痛苦，让 Clash 客户端能够即刻连接。
+
+🐧 适用环境
+默认支持：CentOS / Rocky Linux / RHEL 系列
+
+可扩展支持：只需简单修改包管理器（如将 yum 换成 apt），即可完美运行在 Debian / Ubuntu 系列上。
 
 ## 🌟 项目特点
 
