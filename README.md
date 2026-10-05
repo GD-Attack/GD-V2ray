@@ -21,6 +21,7 @@ v2ray.tar.gz这个压缩文件中包含roles角色和执行角色的playbook剧�
 # GD-V2ray-ansible
 
 基于 Ansible 自动化 Roles 运维剧本，实现一键批量部署 Xray / V2Ray 节点并自动生成 Clash 订阅配置文件。
+这是一个用于在 Linux (CentOS / Rocky Linux / RHEL 系列) 上通过ansible自动化批量部署 Xray (VLESS-REALITY / VMess) 服务并自动生成 Clash 订阅配置文件的roles角色。
 
 ---
 
