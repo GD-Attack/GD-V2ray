@@ -14,6 +14,7 @@ See the [LICENSE](./LICENSE) file for details.
 v2ray.tar.gz这个压缩文件中包含roles角色和执行角色的playbook剧本，下载之后解压，将这个playbook剧本与roles放到/etc/ansible，通过playbook剧本运行这个角色就好，最好ansible.cfg与我文档中的配置相同，不然可能会出现报错信息
 
 
+# 开发者：xian xichun
 
 
 
@@ -23,7 +24,6 @@ v2ray.tar.gz这个压缩文件中包含roles角色和执行角色的playbook剧�
 GD-V2ray-ansible 是一个基于 Ansible 自动化运维剧本（Roles）的项目，旨在帮助管理员在 Linux 服务器上一键、批量部署高性能的 Xray 代理节点（支持 VLESS-REALITY、VMess 等主流安全协议），并能自动生成对应的 Clash / Mihomo 订阅配置文件。
 
 ---
-开发者：xian xichun
 
 🚀 项目概述：GD-V2ray-ansible
 GD-V2ray-ansible 是专为 Linux 管理员和高阶用户设计的 Ansible 自动化运维项目。它能够极大地降低代理节点的部署门槛，实现“代码即基础设施”的现代化运维体验。
